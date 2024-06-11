@@ -1,0 +1,148 @@
+body{
+    font-family: sans-serif;
+}
+input:focus {
+    outline: none; /* Loại bỏ viền khi thẻ input được focus */
+}
+input::placeholder {
+    color: #e16767; !important
+}
+.no-select {
+    -webkit-touch-callout: none; /* Safari */
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -khtml-user-select: none; /* Konqueror 4.0+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.building-search-text, .building-search-number, .building-search-select{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.building-search-select, .building-search-check{
+    padding-top: 30px;
+}
+.input-container {
+    margin-right: 20px;
+    width: 300px;
+    min-width: 150px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #666;
+}
+.select-container{
+    margin-right: 20px;
+}
+.submit-btn{
+    margin-top: 10px;
+    background-color: #5cbf74;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    width: 100px;
+    height: 40px;
+}
+.submit-btn:hover{
+    background-color: #448f5a;
+}
+.custom-alert-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt là 0.5 */
+    z-index: 9998; /* Đặt z-index thấp hơn hộp thoại để nằm dưới */
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    text-align: center;
+}
+
+.custom-alert-message {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.custom-alert-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.custom-alert-button:hover {
+    background-color: #0056b3;
+}
+.my-button-apply{
+    background-color: #6dc682;
+    padding: 6px 12px;
+    border: 10px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.my-button-cancel{
+    background-color: #aebac3;
+    padding: 6px 12px;
+    border: 10px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.my-button-apply:hover{
+    background-color: #5cbf74;
+}
+.my-button-cancel:hover{
+    background-color: #7e8991;
+}
+.input-error{
+    font-size: 15px;
+    padding: 10px;
+    color: #da1a1a;
+}
+.delete-btn{
+    background-color: red;
+    color: #ece4e4;
+}
+.delete-btn:hover{
+    background-color: #a12929;
+}
+
+

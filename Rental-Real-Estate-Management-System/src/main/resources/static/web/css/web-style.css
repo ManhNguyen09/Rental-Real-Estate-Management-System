@@ -1,0 +1,16 @@
+input:focus {
+    outline: none; /* Loại bỏ viền khi thẻ input được focus */
+    border: solid red 1px;
+}
+input::placeholder {
+    color: #e16767; !important
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* Safari */
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -khtml-user-select: none; /* Konqueror 4.0+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
